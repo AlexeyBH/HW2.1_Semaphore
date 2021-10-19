@@ -9,6 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var lightRed: UIView!
+    
+    @IBOutlet var lightYellow: UIView!
+    
+    @IBOutlet var lightGreen: UIView!
+    @IBOutlet var switchButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
