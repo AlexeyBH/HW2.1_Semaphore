@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,58 +12,66 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW2_1_1_Semaphore" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIa-nK-HPF">
-                                <rect key="frame" x="110" y="64" width="208" height="208"/>
+                                <rect key="frame" x="117.5" y="63" width="179" height="179"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" secondItem="dIa-nK-HPF" secondAttribute="width" multiplier="1:1" id="LTz-Kt-cf5"/>
+                                    <constraint firstAttribute="width" secondItem="dIa-nK-HPF" secondAttribute="height" multiplier="1:1" id="OHF-1R-A7x"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhN-u3-7vJ">
-                                <rect key="frame" x="110" y="291" width="208" height="208"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-KJ-W8L">
+                                <rect key="frame" x="117.5" y="261" width="179" height="179.5"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" secondItem="MhN-u3-7vJ" secondAttribute="width" multiplier="1:1" id="3Ty-WQ-B7m"/>
+                                    <constraint firstAttribute="width" secondItem="Pip-KJ-W8L" secondAttribute="height" multiplier="1:1" id="DNa-jg-seZ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-D1-8Rq">
-                                <rect key="frame" x="110" y="522" width="208" height="208"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YfE-0e-d9n">
+                                <rect key="frame" x="120" y="459.5" width="174" height="174"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" secondItem="g8k-D1-8Rq" secondAttribute="width" multiplier="1:1" id="fDa-Vh-MOy"/>
+                                    <constraint firstAttribute="width" secondItem="YfE-0e-d9n" secondAttribute="height" multiplier="1:1" id="snd-we-uXl"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuW-xy-qny">
-                                <rect key="frame" x="-1532" y="749" width="3492" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" secondItem="MuW-xy-qny" secondAttribute="width" multiplier="3:194" id="IZj-zL-xYN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18V-HW-hxN">
+                                <rect key="frame" x="163" y="665" width="88" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Switch"/>
+                                <connections>
+                                    <action selector="buttonSwitchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ew6-b9-3Lf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dIa-nK-HPF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="999" constant="20" id="2Td-ly-uBc"/>
-                            <constraint firstItem="g8k-D1-8Rq" firstAttribute="top" secondItem="MhN-u3-7vJ" secondAttribute="bottom" priority="999" constant="23" id="4bc-6d-eys"/>
-                            <constraint firstItem="MhN-u3-7vJ" firstAttribute="top" secondItem="dIa-nK-HPF" secondAttribute="bottom" priority="999" constant="19" id="Bfj-eY-Qv0"/>
-                            <constraint firstItem="dIa-nK-HPF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="110" id="GBS-pR-hra"/>
-                            <constraint firstItem="MhN-u3-7vJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="110" id="H1G-0N-HWP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dIa-nK-HPF" secondAttribute="trailing" priority="999" constant="110" id="HHp-pN-Vjr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MhN-u3-7vJ" secondAttribute="trailing" priority="999" constant="110" id="M08-bH-ysO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g8k-D1-8Rq" secondAttribute="trailing" priority="999" constant="110" id="U2V-u4-gri"/>
-                            <constraint firstItem="g8k-D1-8Rq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="999" constant="110" id="h6D-oM-tqd"/>
-                            <constraint firstItem="MuW-xy-qny" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s0r-hc-gTw"/>
-                            <constraint firstItem="MuW-xy-qny" firstAttribute="top" secondItem="g8k-D1-8Rq" secondAttribute="bottom" constant="19" id="sIT-k1-kVP"/>
+                            <constraint firstItem="Pip-KJ-W8L" firstAttribute="top" secondItem="dIa-nK-HPF" secondAttribute="bottom" constant="19" id="4VR-qD-icJ"/>
+                            <constraint firstItem="YfE-0e-d9n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7al-G0-t5T"/>
+                            <constraint firstItem="18V-HW-hxN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aac-2q-XWM"/>
+                            <constraint firstItem="Pip-KJ-W8L" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="BXM-Bm-YkW"/>
+                            <constraint firstItem="18V-HW-hxN" firstAttribute="top" secondItem="YfE-0e-d9n" secondAttribute="bottom" constant="31.333333333333371" id="CdY-5j-PF0"/>
+                            <constraint firstItem="YfE-0e-d9n" firstAttribute="top" secondItem="Pip-KJ-W8L" secondAttribute="bottom" constant="19" id="DH9-XR-TXQ"/>
+                            <constraint firstItem="dIa-nK-HPF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kng-8C-EOj"/>
+                            <constraint firstItem="dIa-nK-HPF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="hTi-VB-nZd"/>
+                            <constraint firstItem="dIa-nK-HPF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="lRI-Bj-6YS"/>
+                            <constraint firstItem="Pip-KJ-W8L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mP5-43-Urq"/>
+                            <constraint firstItem="YfE-0e-d9n" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" constant="-5" id="qD3-Fa-CuG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonSwitch" destination="18V-HW-hxN" id="VYE-Xx-L8z"/>
+                        <outlet property="lightGreen" destination="YfE-0e-d9n" id="9id-ja-VrT"/>
+                        <outlet property="lightRed" destination="dIa-nK-HPF" id="8qD-Z1-8Rf"/>
+                        <outlet property="lightYellow" destination="Pip-KJ-W8L" id="j7b-c1-oss"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.43478260869566" y="114.50892857142857"/>
+            <point key="canvasLocation" x="130.37383177570092" y="114.03887688984882"/>
         </scene>
     </scenes>
     <resources>
