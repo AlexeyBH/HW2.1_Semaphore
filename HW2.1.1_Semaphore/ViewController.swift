@@ -57,6 +57,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let radius: CGFloat = self.lightRed.bounds.height / 2
+        lightRed.layer.cornerRadius = radius
+        lightRed.clipsToBounds = true
+        lightYellow.layer.cornerRadius = radius
+        lightYellow.clipsToBounds = true
+        lightGreen.layer.cornerRadius = radius
+        lightGreen.clipsToBounds = true
         self.color = .colorUnderfined
     }
         
